@@ -76,9 +76,9 @@ const detailContact = (nama) => {
 
 const deleteContact = (nama) => {
     const contacts = loadContact();
-    const newContact = contacts.filter((contact)=> contact.nama.toLowerCase() !== nama.toLowerCase());
+    const newContact = contacts.filter((contact) => contact.nama.toLowerCase() !== nama.toLowerCase());
 
-    if (contacts.length === newContact.length){
+    if (contacts.length === newContact.length) {
         console.log(chalk.red.inverse.bold(`nama ${nama} tidak ditemukan`));
         return false;
     }
